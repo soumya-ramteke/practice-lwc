@@ -26,4 +26,12 @@ export default class CompositionBasics extends LightningElement {
     );
     console.log("handleUpdateContact called, contact:" + this.contact);
   }
+
+  handleButtonClick() {
+    // calling child component's method
+    this.template.querySelector("c-contact-tile").randomMethod();
+  }
+  handleAnotherButtonClick() {
+    this.template.querySelector("c-contact-tile").addTwo(15);
+  }
 }

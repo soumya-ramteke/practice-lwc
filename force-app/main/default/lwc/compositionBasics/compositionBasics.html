@@ -5,4 +5,11 @@
     onupdatecontactname={handleUpdateContactName}
   >
   </c-contact-tile>
+  <!-- two buttons added, to call the methods of the child (contactTile) component -->
+  <p>
+    <button onclick={handleButtonClick}>Click to call random method</button>
+  </p>
+  <p>
+    <button onclick={handleAnotherButtonClick}>Click to add 2 to 15</button>
+  </p>
 </template>

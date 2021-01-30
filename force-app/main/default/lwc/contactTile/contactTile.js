@@ -13,4 +13,11 @@ export default class ContactTile extends LightningElement {
   updateContactName() {
     this.dispatchEvent(new CustomEvent("updatecontactname"));
   }
+  // @api public methods , we will call this from the parent compositionBasics component
+  @api randomMethod() {
+    console.log("random method called from composition");
+  }
+  @api addTwo(num) {
+    console.log(num + 2);
+  }
 }
