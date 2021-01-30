@@ -1,3 +1,8 @@
 <template>
-  <c-contact-tile contact1={contact}> </c-contact-tile>
+  <c-contact-tile
+    contact1={contact}
+    onupdatecontact={handleUpdateContact}
+    onupdatecontactname={handleUpdateContactName}
+  >
+  </c-contact-tile>
 </template>
