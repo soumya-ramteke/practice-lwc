@@ -1,0 +1,20 @@
+<template>
+  <c-slot-demo>
+    <!-- the markup inside <c-slot-demo> now will be placed in the slot created in slotDemo component -->
+    <p>
+      This text is defined in slotWrapper component, filling the slot defined in
+      slotDemo component. This text is from slotWrapper component!!!
+    </p>
+  </c-slot-demo>
+  <!-- named slots demo-->
+  <c-named-slots>
+    <span slot="firstName"></span>
+    <!-- we have called the slot here, but gave no text. no text displayed -->
+    <!-- if we remove this slot, then the default one in namedSlots component is displayed.. -->
+    <span slot="lastName"> Wonka </span>
+    <!-- <span slot="my-text"></span> -->
+    <!-- so when we dont reference the slot at all in the markup here, the default value is displayed -->
+    <!-- unnamed -->
+    <span>Chocolatier</span>
+  </c-named-slots>
+</template>

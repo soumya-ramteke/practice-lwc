@@ -1,0 +1,11 @@
+<template>
+  <!-- named slots -->
+  <p>First Name: <slot name="firstName"> Default First Name </slot></p>
+  <p>Last Name: <slot name="lastName">Default Last Name</slot></p>
+  <p>My text:<slot name="my-text">My default text</slot></p>
+  <!-- unnamed slot -->
+  <p>
+    Description:
+    <slot> Default Description </slot>
+  </p>
+</template>
