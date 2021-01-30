@@ -1,0 +1,10 @@
+<template>
+  <template if:true={contact1}>
+    <img src={contact1.Picture} alt="Profile photo" />
+    <p>{contact1.Name}</p>
+    <p>{contact1.Title}</p>
+  </template>
+  <template if:false={contact1}>
+    <p>No contact data available.</p>
+  </template>
+</template>
