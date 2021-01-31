@@ -1,6 +1,9 @@
 import { LightningElement, track } from "lwc";
 
 export default class CompositionBasics extends LightningElement {
+  // To tell the framework to observe changes to the properties of an object or to the elements of an array, decorate the field with @track.
+  // Fields are reactive. Expandos are not reactive.
+
   @track contact = {
     Name: "Amy Taylor",
     Title: "VP of Engineering"
@@ -35,3 +38,9 @@ export default class CompositionBasics extends LightningElement {
     this.template.querySelector("c-contact-tile").addTwo(15);
   }
 }
+
+/* Lightning Web Components observes changes to the internal values of these types of fields:
+      Primitive values
+      Plain objects created with {…} and decorated with @track
+      Arrays created with [] and decorated with @track
+   */
